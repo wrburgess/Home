@@ -58,9 +58,8 @@ alias gs="rvm gemset"
 
 #Git
 alias st="git status"
-alias gc="git commit -m"
-alias gac="git add .;git commit"
 alias stash="git stash"
+alias add="git add ."
 
 #Application shortcuts
 alias itunes="open -a iTunes"
