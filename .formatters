@@ -1,0 +1,6 @@
+fuubar: Fuubar
+nyan: NyanCatFormatter
+webkit: RSpec::Core::Formatters::WebKit
+doc: documentation
+progress: progress
+default: progress

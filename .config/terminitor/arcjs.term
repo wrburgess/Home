@@ -1,0 +1,25 @@
+# COMMENT OF SCRIPT HERE
+# you can make as many tabs as you wish...
+# tab names are actually arbitrary at this point too.
+
+setup do
+  run 'cd ~/Development/architecture-js'
+  run 'rvm gemset delete arcjs'
+  run 'rvm gemset create arcjs'
+  run 'rvm gemset use arcjs'
+  run 'gem install bundler'
+  run 'bundle install'
+end
+
+before do
+  run 'cd ~/Development/architecture-js'
+  run 'rvm gemset use arcjs'
+end
+
+tab do
+  pane "gitx" # first pane
+    pane do      # second pane level => horizontal split
+      run "irb"
+    end
+  pane 'ls'   # first pane level => vertical split
+end

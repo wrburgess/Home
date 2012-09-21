@@ -1,0 +1,23 @@
+[user]
+    name = Dayton Nolan
+    email = dnolan@groupon.com
+[credential]
+    helper = osxkeychain
+[mergetool]
+    keepBackup = true
+[difftool "Kaleidoscope"]
+    cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
+    prompt = false
+[diff]
+    tool = Kaleidoscope
+[github]
+    user = daytonn
+[core]
+	editor = vim
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+[color]
+	ui = true

@@ -1,0 +1,2 @@
+export PATH="$PATH:/usr/local/android-sdk-macosx"
+export PATH="$PATH:/usr/local"

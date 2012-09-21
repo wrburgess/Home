@@ -1,0 +1,22 @@
+#!/usr/bin/env ruby
+require "yaml"
+
+format_file = "#{ENV['HOME']}/.formatters"
+
+begin
+  formats = YAML.load_file format_file
+rescue
+  raise "No formats" unless formats
+end
+
+raise "You must choose a format" unless ARGV[0]
+
+args = Array.try_convert ARGV
+format = args.map { |arg| "--format #{formats[arg]}" }.join " "
+
+File.open "#{ENV['HOME']}/.rspec", "w+" do |f|
+  f << "--color #{format}"
+end
+
+activated_formats = args.map { |arg| "#{formats[arg]}" }.join ", "
+puts "rspec now using format(s): #{activated_formats}"

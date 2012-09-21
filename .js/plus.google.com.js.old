@@ -1,0 +1,2 @@
+var theme = 'pownce';
+$('head').append('<link rel="stylesheet" href="http://daytonnolan.com/dotjs/plus.google.com/' + theme + '.css" type="text/css"/>');

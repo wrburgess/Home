@@ -1,0 +1,5 @@
+softWrap = false
+softTabs = true
+fontSize = 14
+windowTitle = $TM_SCM_BRANCH
+showInvisibles = true

@@ -1,0 +1,78 @@
+#File System
+alias files="ls -l | grep -v ^d"
+alias folders="s -ld */"
+alias hidden="ls -ld .??*"
+alias trash="rm -rf ~/.Trash/*"
+alias delete="rm -Rf"
+alias remove="rm -Rf"
+alias lcl="cd /usr/local"
+alias src='cd /usr/local/src'
+alias bin='cd /usr/local/bin'
+
+#Shortcuts
+alias home="cd ~"
+alias ..="cd ../"
+alias ...="cd ../.."
+alias lst="ls -alh"
+alias etc="cd /etc"
+alias dt='cd ~/Desktop'
+alias dl="cd ~/Downloads"
+alias db='cd ~/Dropbox'
+alias scripts="cd ~/Dropbox/Scripts"
+alias server='ssh daytonn@daytonn.dyndns.org'
+alias macpro='ssh -p 23 daytonn@daytonn.dyndns.org'
+alias c="clear"
+alias ex="exit"
+alias mxclear="rake db:drop db:create:all db:migrate db:test:prepare"
+alias appsup="cd ~/Library/Application\ Support/"
+alias subdir="cd ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User"
+
+#Settings
+alias brc='open ~/.bash_profile -a "Sublime Text 2"'
+alias bfn='open ~/.bash_functions -a "Sublime Text 2"'
+alias als='open ~/.aliases -a "Sublime Text 2"'
+alias path='open  ~/.path -a "Sublime Text 2"'
+alias reload='source ~/.bash_profile;'
+
+#Apache
+alias repache="sudo /usr/sbin/apachectl restart"
+alias apache="sudo /usr/sbin/apachectl start"
+alias stopache="sudo /usr/sbin/apachectl stop"
+
+#Bundler
+alias be="bundle exec"
+alias bess="bundle exec script/server"
+alias besc="bundle exec script/console"
+alias bems="bundle exec script/multi_server"
+
+#Rails
+alias model="rails generate model"
+alias migration="rails generate migration"
+alias controller="rails generate controller"
+alias migrate="rake db:migrate"
+alias prepare="rake db:test:prepare"
+alias ucorn="unicorn -p 3000"
+
+#RVM
+alias gs="rvm gemset"
+
+#Git
+alias st="git status"
+alias gc="git commit -m"
+alias gac="git add .;git commit"
+alias stash="git stash"
+
+#Application shortcuts
+alias itunes="open -a iTunes"
+alias firefox="open -a Firefox"
+alias chrome='open -a "Google Chrome"'
+alias pg="postgres -D /usr/local/var/postgres"
+
+#Development
+alias architectd="~/Development/architecture-js/bin/architect"
+alias jasmin="jasmine-headless-webkit -c"
+
+#Configuration
+alias showdock="defaults write com.apple.dock tilesize -int 48;defaults write com.apple.dock pinning -string middle;defaults write com.apple.dock autohide -bool false;killall Dock"
+alias hidedock="defaults write com.apple.dock tilesize -int 1;defaults write com.apple.dock pinning -string start;defaults write com.apple.dock autohide -bool true;killall Dock"
+alias mate="subl"
